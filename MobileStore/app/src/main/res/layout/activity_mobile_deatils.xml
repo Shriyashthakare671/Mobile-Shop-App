@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MobileDeatilsActivity">
+
+    <LinearLayout
+        android:layout_above="@+id/btnBuy"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageMobile"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+               />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textName"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textCompany"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comapny"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textPrice"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textRam"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ram"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textStorage"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage"/>
+    </LinearLayout>
+
+    <Button
+        android:onClick="buy"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:id="@+id/btnBuy"
+        android:layout_alignParentBottom="true"
+        android:text="Buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
